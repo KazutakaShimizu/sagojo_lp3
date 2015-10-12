@@ -12,7 +12,7 @@
   <% end %>
 
     <%= f.label :email %><br>
-    <%= f.email_field :email %>
-
-    <%= f.submit "事前登録" %>
+    <%= f.email_field :email,:placeholder => "mailadress@example.com"  %>
+<p class="btn-02 mb30"><%= f.submit "事前登録する" %></p>
+    
 <% end %>
