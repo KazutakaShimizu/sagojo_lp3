@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
+ruby "2.2.2"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
-# Use sqlite3 as the database for Active Record
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -15,12 +15,14 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'better_errors'
 # better_errorsの画面上にirb/pry(PERL)を表示する
 gem 'binding_of_caller'
-group :development, :test do
-  gem 'sqlite3'
-end
-group :production do
-  gem 'mysql2'
-end
+
+# group :development, :test do
+#   gem 'sqlite3'
+# end
+# group :production do
+gem 'mysql2'
+# end
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
