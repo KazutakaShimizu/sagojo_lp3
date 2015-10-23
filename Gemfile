@@ -20,7 +20,7 @@ gem 'binding_of_caller'
 #   gem 'sqlite3'
 # end
 # group :production do
-gem 'mysql2'
+gem 'mysql2', "0.4.1"
 # end
 
 # Use jquery as the JavaScript library
