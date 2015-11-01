@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+ruby "2.2.2"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
@@ -14,6 +15,14 @@ gem 'therubyracer', platforms: :ruby
 gem 'better_errors'
 # better_errorsの画面上にirb/pry(PERL)を表示する
 gem 'binding_of_caller'
+
+# group :development, :test do
+#   gem 'sqlite3'
+# end
+# group :production do
+gem 'mysql2', "~> 0.3.13"
+# end
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
@@ -46,6 +55,7 @@ group :development, :test do
   gem 'rspec-mocks'
   gem 'faker', '>= 1.4.3'
 end
+<<<<<<< HEAD
 group :test do
   gem 'factory_girl_rails', '>= 4.5.0'
   gem 'selenium-webdriver'
@@ -53,3 +63,8 @@ group :test do
   gem 'cucumber-rails', '1.4.0', :require => false
   gem 'database_cleaner', github: 'bmabey/database_cleaner'
 end
+=======
+
+gem 'rails_12factor', group: :production
+
+>>>>>>> b4d3dbfd26ff05362c9e13ff19895d16edd030ae
