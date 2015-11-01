@@ -22,29 +22,21 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
-
 gem 'pry-rails'
-
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
 # Use Unicorn as the app server
 gem 'unicorn'
-
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
 group :production do
   gem 'mysql2', '~> 0.3.20'
 end
-
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
-
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'annotate', :git => 'git://github.com/ctran/annotate_models.git'
@@ -54,7 +46,6 @@ group :development, :test do
   gem 'rspec-mocks'
   gem 'faker', '>= 1.4.3'
 end
-
 group :test do
   gem 'factory_girl_rails', '>= 4.5.0'
   gem 'selenium-webdriver'
@@ -62,5 +53,3 @@ group :test do
   gem 'cucumber-rails', '1.4.0', :require => false
   gem 'database_cleaner', github: 'bmabey/database_cleaner'
 end
-
-

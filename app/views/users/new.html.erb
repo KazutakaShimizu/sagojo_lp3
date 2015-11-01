@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="ja">
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
 <meta charset="UTF-8" />
 <title>すごい旅人求人サイト -　SAGOJO</title>
@@ -17,8 +15,21 @@
 <!--//OGP-->
 <link rel="shortcut icon" type="image/x-icon" href="/favicon/favicon.ico">
 <link rel="icon" type="image/png" href="/favicon/favicon-32x32.png" sizes="32x32">
-<link rel="stylesheet" media="screen,print" href="css/base.css" />
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<script src="//cdn.optimizely.com/js/3720477569.js"></script>
+<script>
+ (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ ga('create', 'UA-69411864-1', 'auto');
+ ga('send', 'pageview');
+
+</script>
 </head>
 
 <body>
@@ -36,7 +47,7 @@
 <p class="main-lead">あなたの旅をシゴトにしよう</p>
 <p class="sub-lead-01">文章・写真・動画などのコンテンツをつくる旅人、募集します</p>
 <p class="btn-entry-01 btn-01 type-01"><a href="#">事前登録する</a></p>
-<p class="font-s text-c-01">事前登録いただくと、SAGOJOの情報を受け取れます。<br>オープンは、2016年2月下旬以降を予定しています。</p>
+<p class="font-s text-c-01">事前登録いただくと、SAGOJOの情報を受け取れます。<br>オープンは、2016年2月下旬頃を予定しています。</p>
 </div>
 </div>
 <!-- /inner --></div>
@@ -48,8 +59,7 @@
 <div class="motion-area-01">
 <div>
 <h2 class="hdg-lv2-01 mb50"><span class="sub-ttl type-01">WHAT IS SAGOJO ?</span>旅人だからできる「シゴト」、<br>SAGOJOにあります。</h2>
-<p>今、記事を書いたり動画・写真を撮ったりというコンテンツ制作の仕事の需要が増えています。SAGOJOは、旅先でコンテンツ制作の「シゴト」をすることで、企業から報酬として「リターン」を受け取りながら旅する
-ことができる「すごい旅人求人サービス」です。<br>中国の古典「西遊記」で沙悟浄が三蔵法師や孫悟空を助けたように、SAGOJOは旅する人を本気でサポートします。</p>
+<p>今、記事を書いたり動画・写真を撮ったりというコンテンツ制作の需要が増えています。SAGOJOは、旅先でコンテンツ制作の「シゴト」をすることで、企業から「リターン」を受け取りながら旅することができる「すごい旅人求人サービス」です。<br>中国の古典「西遊記」で沙悟浄が三蔵法師や孫悟空を助けたように、SAGOJOは旅する人を本気でサポートします。</p>
 </div>
 <div class="motion-elem">
 <div id="motion-elem-01">
@@ -71,13 +81,13 @@
 <ul class="list-merit list-bullet col3">
 <li>
 <%= image_tag("img-03.jpg") %>
-<img src="/img/img-03.jpg" alt="">
+<h3 class="hdg-lv3-01">シゴトに応じた<br>リターンを得られる</h3>
 <p>旅をしながら企業からのシゴトをして価値を生み出すことで、金銭、物資、チケット（宿泊券・割引券など）といった、あなたの旅の出発、継続に必要なリターンを得ることができます。</p>
 </li>
 <li>
 <%= image_tag("img-04.jpg") %>
 <h3 class="hdg-lv3-01">あなたの「好き」「得意」を<br>活かしながら旅できる</h3>
-<p>写真が好きなあなたは写真を撮りながら、ライターとして活躍されてきたあなたは文章を書きながら。SAGOJOを使えばあなたの「好き」「得意」を活かして、旅に出ることができます。</p>
+<p>写真が好きなあなたは写真を撮りながら、ライターとして活躍してきたあなたは文章を書きながら。SAGOJOを使えばあなたの「好き」「得意」を活かして、旅に出ることができます。</p>
 </li>
 <li>
 <%= image_tag("img-05.jpg") %>
@@ -94,16 +104,16 @@
 <p class="sub-lead-02">コンセプトのある旅をして、<br>話題になるコンテンツをつくりませんか？</p>
 <div class="list-example list-bullet col3 carousel-01">
 <div class="type-01">
-<img class="icon-example" src="/img/icon-example-01.png" alt="">
-<img class="img-example" src="/img/img-example-01.jpg" srcset="/img/img-example-01.jpg 1x, /img/img-example-01-sp.png 2x" alt="">
+<img class="icon-example" src="<%= asset_path "icon-example-01.png"%>" alt="">
+<img class="img-example" src="<%= asset_path "img-example-01.jpg"%>" srcset="<%= asset_path "img-example-01.jpg" %> 1x, <%= asset_path "img-example-01-sp.png"%> 2x" alt="">
 </div>
 <div>
-<img class="icon-example" src="/img/icon-example-02.png" alt="">
-<img class="img-example" src="/img/img-example-02.jpg" srcset="/img/img-example-02.jpg 1x, /img/img-example-02-sp.png 2x" alt="">
+<img class="icon-example" src="<%= asset_path "icon-example-02.png"%>" alt="">
+<img class="img-example" src="/img/img-example-02.jpg" srcset="<%= asset_path "img-example-02.jpg" %> 1x, <%= asset_path "img-example-02-sp.png"%> 2x"  alt="">
 </div>
 <div>
-<img class="icon-example" src="/img/icon-example-03.png" alt="">
-<img class="img-example" src="/img/img-example-03.jpg" srcset="/img/img-example-03.jpg 1x, /img/img-example-03-sp.png 2x" alt="">
+<img class="icon-example" src="<%= asset_path "icon-example-03.png"%>" alt="">
+<img class="img-example" src="/img/img-example-03.jpg" srcset="<%= asset_path "img-example-03.jpg" %> 1x, <%= asset_path "img-example-03-sp.png"%> 2x" alt="">
 </div>
 </div>
 <!-- /inner --></div>
@@ -126,7 +136,7 @@
 <li>
 <span class="flow-content type-01">SAGOJO<br>による編集</span>
 <%= image_tag("img-08.jpg") %>
-<span class="flow-detail">旅人がつくったコンテンツはSAGOJOによって編集・ディレクションされる。</span>
+<span class="flow-detail">旅人がつくったコンテンツは、SAGOJOによって編集・サポートを受ける。</span>
 </li>
 <li>
 <span class="flow-content">公開</span>
@@ -165,7 +175,7 @@
 <dd>
 <ul>
 <li><i class="fa fa-check"></i>旅しながらシゴトができる</li>
-<li><i class="fa fa-check"></i>SAGOJOがディレクションしてくれる</li>
+<li><i class="fa fa-check"></i>SAGOJOがサポートしてくれる</li>
 <li><i class="fa fa-check"></i>自分のスキルを社会に還元できる</li>
 </ul>
 </dd>
@@ -181,14 +191,15 @@
 </dt>
 <dd>
 <ul>
-<li><i class="fa fa-check"></i>旅のコンテンツ化に熱意のある旅人に依頼できる</li>
+<li><i class="fa fa-check"></i>熱意のある人にコンテンツ作りを依頼できる</li>
 <li><i class="fa fa-check"></i>世界を舞台にした面白い企画ができる</li>
 <li><i class="fa fa-check"></i>編集・ディレクションまでSAGOJOに任せられる</li>
 </ul>
 </dd>
 </dl>
 <!-- /sagojo-mechanism --></div>
-<p class="btn-01 type-02"><a href="#">企業の方はこちらからお問い合わせください</a></p>
+<p class="btn-01 type-02"><a href="mailto:sagojo.travel@gmail.com">企業の方はこちらからお問い合わせください</a></p>
+
 
 <!-- /inner --></div>
 <!-- /section --></div>
@@ -211,7 +222,7 @@
 <p>旅人が世界のために活躍しながら旅する時代をつくる、<br>すごい旅人求人サイト「SAGOJO」ができました。</p>
 <p class="mb100">あなたの人生に今、「旅をする」という選択肢を加えてみませんか？</p>
 <div class="logo-02">
-<%= image_tag("logo-01.svg",:width => "138",:height => "auto",:alt => "SAGOJO") %>
+<%= image_tag("logo-01.svg",:width => "183",:height => "auto",:alt => "SAGOJO") %>
 <p>すごい旅人求人サービス - サゴジョー</p>
 </div>
 <!-- /inner --></div>
@@ -221,7 +232,7 @@
 <div class="inner">
 <h2 class="hdg-lv2-01 a-center">SAGOJOを<br>カタチにする仲間達</h2>
 <ul class="list-member-01 mb100">
-i<li>
+<li>
 <div class="hover-rotate">
 <%= image_tag("shin1.png",:class => "prof-img type-01 first") %>
 <%= image_tag("shin2.png",:class => "prof-img type-01 second") %>
@@ -305,7 +316,7 @@ i<li>
 <%= image_tag("misaki1.png",:class => "prof-img type-03 first") %>
 <%= image_tag("misaki2.png",:class => "prof-img type-03 second") %>
 <!-- /hover-rotate --></div>
-<span class="font-l">misaki</span><span class="font-ss text-c-02">ライター</span>
+<span class="font-l">misaki</span><span class="font-ss text-c-02">エディター</span>
 <ul class="list-sns-btn-01">
 <li class="twitter"><a target="_blank" href="https://twitter.com/sugar_m1"><i class="fa fa-twitter"></i>
 </a></li>
@@ -318,9 +329,9 @@ i<li>
 <%= image_tag("suzu1.png",:class => "prof-img type-04 first") %>
 <%= image_tag("suzu2.png",:class => "prof-img type-04 second") %>
 <!-- /hover-rotate --></div>
-<span class="font-l">鈴木 ヒデツグ</span><span class="font-ss text-c-02">アドバイザー</span>
+<span class="font-l">鈴木 ヒデツグ</span><span class="font-ss text-c-02">エディター</span>
 <ul class="list-sns-btn-01">
-<li class="twitter"><a target="_blank" href="https://twitter.com/travel_and_69"><i class="fa fa-twitter"></i>
+<li class="twitter"><a target="_blank" href="https://twitter.com/tabi_to_rock"><i class="fa fa-twitter"></i>
 </a></li>
 <li class="facebook"><a target="_blank" href="https://www.facebook.com/tabi.to.rock"><i class="fa fa-facebook"></i>
 </a></li>
@@ -339,7 +350,7 @@ i<li>
 </li>
 </ul>
 <h3 class="hdg-lv3-01 a-center">一緒にSAGOJOをカタチにしてくれる仲間を募集中！</h3>
-<p class="btn-01 type-03 a-center"><a href="mailto:hoge@piyo.jp">仲間になる</a></p>
+<p class="btn-01 type-03 a-center"><a href="mailto:sagojo.travel@gmail.com">仲間になる</a></p>
 <!-- /inner --></div>
 <!-- /section --></div>
 
@@ -385,7 +396,7 @@ i<li>
 <h3 class="hdg-lv3-04 mb30">事前登録</h3>
 <p class="mb20">事前登録いただくと、<br>SAGOJOの情報をお届けいたします。</p>
 <%= render 'form' %>
-<p class="font-s">オープンは、2016年2月下旬以降を予定しています。</p>
+<p class="font-s">オープンは、2016年2月下旬頃を予定しています。</p>
 <!-- /inner --></div>
 <a id="btn-close-01" title="閉じる" href="#">×</a>
 <!-- /form-area-01 --></div>
@@ -397,6 +408,3 @@ i<li>
 <script src="js/slick.min.js"></script>
 <script src="js/run.js"></script>
 </body>
-
-</html>
-
