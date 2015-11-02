@@ -1193,6 +1193,19 @@ footer {
   -webkit-box-shadow: 0 5px 0 0 #3ba6e6;
   box-shadow: 0 5px 0 0 #3ba6e6;
 }
+
+.btn-02 a {
+    line-height: 60px;
+    display: inline-block;
+    padding: 0 40px 0 45px;
+    letter-spacing: 5px;
+    color: #000000;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    background-color: #fff000;
+    -webkit-box-shadow: 0 5px 0 0 #f4d931;
+    box-shadow: 0 5px 0 0 #f4d931;
+}
 .list-sns-btn-03 > li > a {
   line-height: 57px;
   display: inline-block;
