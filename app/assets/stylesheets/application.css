@@ -934,7 +934,7 @@ footer {
 .btn-02 {
   margin-bottom: 0;
 }
-.btn-02 a {
+.btn-02 input {
   line-height: 60px;
   display: inline-block;
   padding: 0 40px 0 45px;
@@ -945,6 +945,11 @@ footer {
   background-color: #fff000;
   -webkit-box-shadow: 0 5px 0 0 #f4d931;
   box-shadow: 0 5px 0 0 #f4d931;
+}
+
+#form-area-01 input{
+  border: none;
+
 }
 
 .hdg-lv2-01 {
