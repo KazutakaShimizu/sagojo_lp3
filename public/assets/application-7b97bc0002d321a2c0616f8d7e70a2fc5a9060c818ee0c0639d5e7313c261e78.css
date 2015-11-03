@@ -10,9 +10,10 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
- *= require_self
+
+
  */
+
 
 @charset "UTF-8";
 .motion-area-01, .list-flow-01, .list-member-01, #float-area-01, .list-float, .list-bullet.col3, .list-sns-btn-01, .list-sns-btn-02, .list-sns-btn-03 {
