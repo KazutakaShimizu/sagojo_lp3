@@ -191,19 +191,19 @@ header .btn-scroll-down {
 }
 
 #slide-item-1 {
-  background-image: image-url("bg-top-01.jpg");
+  background-image: url(/assets/bg-top-01.jpg);
 }
 
 #slide-item-2 {
-  background-image: image-url("bg-top-02.jpg");
+  background-image: url(/assets/bg-top-02.jpg);
 }
 
 #slide-item-3 {
-  background-image: image-url("bg-top-03.jpg");
+  background-image: url(/assets/bg-top-03.jpg);
 }
 
 #slide-item-4 {
-  background-image: image-url("bg-top-04.jpg");
+  background-image: url(/assets/bg-top-04.jpg);
 }
 
 .section {
